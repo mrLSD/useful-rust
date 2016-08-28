@@ -119,6 +119,7 @@ mod std_library_types_strings;
 mod std_library_types_option;
 mod std_library_types_result;
 mod std_library_types_result_try;
+mod std_library_types_panic;
 
 pub mod rbe {
     pub fn main() {
@@ -239,5 +240,6 @@ pub mod rbe {
         super::std_library_types_option::main();
         super::std_library_types_result::main();
         super::std_library_types_result_try::main();
+        super::std_library_types_panic::main();
     }
 }
