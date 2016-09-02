@@ -34,4 +34,5 @@ fn main() {
     // From shortcur
     //      use tutor::modules::japanese::*;
     println!("Goodbye in Japanese: {}", farewells::goodbye());
+    tutor::const_and_static::test_static();
 }
