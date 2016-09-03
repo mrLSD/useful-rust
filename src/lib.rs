@@ -2,3 +2,4 @@
 // @link: https://doc.rust-lang.org/book/crates-and-modules.html
 pub mod modules;
 pub mod const_and_static;
+pub mod attributes;
