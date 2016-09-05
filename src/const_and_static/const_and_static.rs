@@ -4,7 +4,7 @@ pub const N: i32 = 5 + 1;
 
 // Almost always, if you can choose between the two, choose const.
 
-static NAME: &'static str = "Steve";
+pub static NAME: &'static str = "Steve";
 static mut AGE: i32 = 25;
 
 pub fn test_static() {

@@ -10,7 +10,7 @@ use tutor::modules::english::{self, greetings as en_greeting};
 //      use tutor::modules::english::{self};
 //      use tutor::modules::english::{greetings as en_greeting};
 
-// Schorycust for all path:
+// Schortcut for all path:
 //      tutor::modules::japanese::
 use tutor::modules::japanese::*;
 
@@ -35,4 +35,5 @@ fn main() {
     //      use tutor::modules::japanese::*;
     println!("Goodbye in Japanese: {}", farewells::goodbye());
     tutor::const_and_static::test_static();
+    println!("About NAME: [{}]", tutor::const_and_static::NAME);
 }
