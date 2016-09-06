@@ -36,4 +36,6 @@ fn main() {
     println!("Goodbye in Japanese: {}", farewells::goodbye());
     tutor::const_and_static::test_static();
     println!("About NAME: [{}]", tutor::const_and_static::NAME);
+
+    tutor::if_form::main(10);
 }
