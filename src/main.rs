@@ -31,11 +31,13 @@ fn main() {
     println!("Hello in Japanese: {}", tutor::modules::japanese::hello());
     // Full declaration
     println!("Goodbye in Japanese: {}", tutor::modules::japanese::farewells::goodbye());
-    // From shortcur
+    // From shortcut
     //      use tutor::modules::japanese::*;
     println!("Goodbye in Japanese: {}", farewells::goodbye());
     tutor::const_and_static::test_static();
     println!("About NAME: [{}]", tutor::const_and_static::NAME);
-
+    // Chapter 4.5 - if
     tutor::if_form::main(10);
+    // Chapter 4.24 - Universal Function Call Syntax
+    tutor::ufcs::main();
 }
