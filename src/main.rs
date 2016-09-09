@@ -39,5 +39,6 @@ fn main() {
     // Chapter 4.5 - if
     tutor::if_form::main(10);
     // Chapter 4.24 - Universal Function Call Syntax
-    tutor::ufcs::main(x);
+    tutor::ufcs::main();
+    tutor::closures::main();
 }

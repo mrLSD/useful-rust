@@ -5,6 +5,7 @@ Main idea - after reading **The Rust Programming Language book** grasp by rust c
 #### Tasks
 - [ ] [Champter 4 - Syntax and Semantics](https://doc.rust-lang.org/book/syntax-and-semantics.html)
     - [x] [Champter 4.5 - if](https://doc.rust-lang.org/book/if.html)
+    - [x] [Chapter 4.23 - Closures](https://doc.rust-lang.org/book/closures.html)
     - [ ] [Chapter 4.24 - Universal Function Call Syntax](https://doc.rust-lang.org/book/ufcs.html)
     - [x] [Chapter 4.25 - Crates and Modules](https://doc.rust-lang.org/book/crates-and-modules.html)
     - [x] [Chapter 4.26 - `const` and `static`](https://doc.rust-lang.org/book/const-and-static.html)
