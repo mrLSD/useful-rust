@@ -22,11 +22,18 @@ pub mod closures {
 
         println!("Assert check: {}", simelar_closures());
 
+        // The environment for a closure can include bindings
+        // from its enclosing
+        // It borrows the binding!
+        // we took ownership!
         let num = 5;
         let plus_num = |x: i32| x + num;
         println!("Assert sum: {} {}", plus_num(10), num);
+
+        move_closures();
     }
 
+    // Similar symantics for slosures and Function
     fn simelar_closures() -> bool {
         fn  plus_one_v1   (x: i32) -> i32 { x + 1 }
         let plus_one_v2 = |x: i32| -> i32 { x + 1 };
@@ -36,5 +43,24 @@ pub mod closures {
         plus_one_v2(10) == plus_one_v3(10)
     }
 
+    fn move_closures() {
+        let mut num = 5;
+        // `num` will be changed
+        {
+            let mut add_num = |x: i32| num += x;
+            add_num(5);
+        }
+        assert_eq!(10, num);
+
+        // For move closure
+        let mut num = 5;
+        {
+            // Move -> copied `num` value
+            // We took ownership of a copy
+            let mut add_num = move |x: i32| num += x;
+            add_num(5);
+        }
+        assert_eq!(5, num);
+    }
 
 }
