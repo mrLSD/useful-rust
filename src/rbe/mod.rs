@@ -122,6 +122,7 @@ mod std_library_types_result_try;
 mod std_library_types_panic;
 mod std_library_types_hashmap;
 mod std_library_types_hashmap_alternate;
+mod std_library_types_hashmap_hashset;
 
 pub mod rbe {
     pub fn main() {
@@ -245,5 +246,6 @@ pub mod rbe {
         super::std_library_types_panic::main();
         super::std_library_types_hashmap::main();
         super::std_library_types_hashmap_alternate::main();
+        super::std_library_types_hashmap_hashset::main();
     }
 }
