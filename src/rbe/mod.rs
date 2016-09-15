@@ -45,6 +45,7 @@ mod functions;
 mod functions_methods;
 mod functions_closures;
 mod functions_closures_capturing;
+mod functions_closures_input_parameters;
 
 mod scoping_rules_raii;
 mod scoping_rules_ownership;
@@ -94,6 +95,7 @@ pub mod rbe {
         super::functions_methods::main();
         super::functions_closures::main();
         super::functions_closures_capturing::main();
+        super::functions_closures_input_parameters::main();
 
         super::scoping_rules_raii::main();
         super::scoping_rules_ownership::main();

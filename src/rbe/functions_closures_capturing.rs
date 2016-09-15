@@ -32,7 +32,6 @@ pub fn main() {
     // Call the closure.
     inc();
     inc();
-    println!("`color`: {}", color);
 
     //let reborrow = &mut count;
     // ^ TODO: try uncommenting this line.
