@@ -41,11 +41,13 @@ mod flowcontrol_for;
 mod flowcontrol_match;
 mod flowcontrol_if_let;
 mod flowcontrol_while_let;
+
 mod functions;
 mod functions_methods;
 mod functions_closures;
 mod functions_closures_capturing;
 mod functions_closures_input_parameters;
+mod functions_closures_type_anonymity;
 
 mod scoping_rules_raii;
 mod scoping_rules_ownership;
@@ -96,6 +98,8 @@ pub mod rbe {
         super::functions_closures::main();
         super::functions_closures_capturing::main();
         super::functions_closures_input_parameters::main();
+        super::functions_closures_input_parameters::main();
+        super::functions_closures_type_anonymity::main();
 
         super::scoping_rules_raii::main();
         super::scoping_rules_ownership::main();
