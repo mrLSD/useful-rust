@@ -54,6 +54,6 @@ pub mod structs {
         struct Color(i32, i32, i32);
         let black = Color(0, 0, 0);
         let white = Color(0xFF, 0b010, 0xFF);
-        println!("", black);
+        println!("{:?}", black);
     }
 }
