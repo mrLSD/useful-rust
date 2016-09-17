@@ -48,12 +48,19 @@ pub mod structs {
                  point3d_2.y,
                  point3d_2.z);
         tuple_stuct();
+
+        // Unit-like structs
+        struct Electron;
+        let el = Electron;
+        match el {
+            Electron => println!("Electron")
+        }
     }
 
     fn tuple_stuct() {
         struct Color(i32, i32, i32);
-        let black = Color(0, 0, 0);
-        let white = Color(0xFF, 0b010, 0xFF);
-        println!("{:?}", black);
+        let white = Color(0xFF, 0x070, 0xFF);
+        let Color(x, y, z) = white;
+        println!("Color({}, {}, {})", x, y, z);
     }
 }
