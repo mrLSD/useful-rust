@@ -41,4 +41,5 @@ fn main() {
     // Chapter 4.24 - Universal Function Call Syntax
     tutor::ufcs::main();
     tutor::closures::main();
+    tutor::structs::structs::main();
 }
