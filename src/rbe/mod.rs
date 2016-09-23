@@ -51,6 +51,7 @@ mod functions_closures_type_anonymity;
 mod functions_closures_input_functions;
 mod functions_closures_output_parameters;
 mod functions_closures_std;
+mod functions_higher_order_functions;
 
 mod scoping_rules_raii;
 mod scoping_rules_ownership;
@@ -105,6 +106,7 @@ pub mod rbe {
         super::functions_closures_input_functions::main();
         super::functions_closures_output_parameters::main();
         super::functions_closures_std::main();
+        super::functions_higher_order_functions::main();
 
         super::scoping_rules_raii::main();
         super::scoping_rules_ownership::main();
