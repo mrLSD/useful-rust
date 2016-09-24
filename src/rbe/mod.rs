@@ -20,6 +20,7 @@ mod custom_types_enums;
 mod custom_types_enums_use;
 mod custom_types_enums_clike;
 mod custom_types_enums_linkedlist;
+mod custom_types_constants;
 
 mod scoping_rules_raii;
 mod scoping_rules_ownership;
@@ -43,6 +44,7 @@ pub mod rbe {
         super::custom_types_enums_use::main();
         super::custom_types_enums_clike::main();
         super::custom_types_enums_linkedlist::main();
+        super::custom_types_constants::main();
 
         super::scoping_rules_raii::main();
         super::scoping_rules_ownership::main();
