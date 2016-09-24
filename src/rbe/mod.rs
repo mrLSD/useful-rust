@@ -23,6 +23,7 @@ mod custom_types_enums_linkedlist;
 mod custom_types_constants;
 
 mod variable;
+mod variable_mutability;
 
 mod scoping_rules_raii;
 mod scoping_rules_ownership;
@@ -49,6 +50,7 @@ pub mod rbe {
         super::custom_types_constants::main();
 
         super::variable::main();
+        super::variable_mutability::main();
 
         super::scoping_rules_raii::main();
         super::scoping_rules_ownership::main();
