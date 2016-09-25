@@ -42,4 +42,7 @@ fn main() {
     tutor::ufcs::main();
     tutor::closures::main();
     tutor::structs::structs::main();
+
+    // Rust by examples
+    tutor::rbe::main();
 }
