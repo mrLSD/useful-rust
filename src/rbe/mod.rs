@@ -6,6 +6,7 @@ mod hello;
 mod hello_comment;
 mod hello_formatted_print;
 mod hello_debug;
+mod hello_display;
 
 pub mod rbe {
     pub fn main() {
@@ -13,5 +14,6 @@ pub mod rbe {
         super::hello_comment::main();
         super::hello_formatted_print::main();
         super::hello_debug::main();
+        super::hello_display::main();
     }
 }
