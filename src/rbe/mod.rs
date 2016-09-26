@@ -2,12 +2,15 @@
 /// http://rustbyexample.com/
 
 pub use self::rbe::*;
+
 mod hello;
 mod hello_comment;
 mod hello_formatted_print;
 mod hello_debug;
 mod hello_display;
 mod hello_format;
+
+mod primitives;
 
 pub mod rbe {
     pub fn main() {
@@ -17,5 +20,8 @@ pub mod rbe {
         super::hello_debug::main();
         super::hello_display::main();
         super::hello_format::main();
+
+        super::primitives::main();
+
     }
 }
