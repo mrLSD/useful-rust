@@ -3,7 +3,7 @@
 # @author Evgeny Ukhanov <mrlsd@ya.ru>
 #
 
-.PHONY: run, build, release, install
+.PHONY: run, build, release, install, docker-build
 
 default: build
 
@@ -28,3 +28,7 @@ install:
 	@echo Installed:
 	@rustc --version
 	@echo Done.
+
+docker-build:
+	@echo Start building Docker image...
+	@docker build -t mrlsd/rust:latest .
