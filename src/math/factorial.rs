@@ -1,24 +1,18 @@
+extern crate num;
 extern crate num_bigint;
-// extern crate num_traits;
+extern crate num_traits;
 
 use self::num_bigint::{BigUint, ToBigUint};
-//use self::num_traits::{Zero, One};
+use self::num_traits::One;
 
-const one: BigUint = 1.to_biguint().unwrap();
-
-pub fn factorial(num: BigUint) -> BigUint {
-	if num == one {
-		return num;
+pub fn factorial(num: u64) -> BigUint {
+	let current: BigUint = num.to_biguint().unwrap();
+	if num <= 1 {
+		return One::one();
 	}
-	return one;
-//	let res = num.sub(one);
-//	return res;
-	//let res: Ratio<BigInt> = Ratio::from_integer(FromPrimitive::from_u64(num).unwrap());
-	//return num * factorial(num+1);
+	return current * factorial(num - 1);
 }
 
 pub fn factorial_display(num: u64) {
-	let current: BigUint = num.to_biguint().unwrap();
-	//factorial(current)
-	println!("Factorisl")
+	println!("Factorisl {}! = {}", num, factorial(num))
 }
