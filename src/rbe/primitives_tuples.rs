@@ -8,6 +8,11 @@ fn reverse(pair: (i32, bool)) -> (bool, i32) {
     (boolean, integer)
 }
 
+// Activity lesson: matrix transpose
+fn transpose(matrix: Matrix) -> Matrix {
+    Matrix(matrix.0, matrix.2, matrix.1, matrix.3)
+}
+
 // The following struct is for the activity.
 #[derive(Debug)]
 struct Matrix(f32, f32, f32, f32);
@@ -15,7 +20,7 @@ struct Matrix(f32, f32, f32, f32);
 impl fmt::Display for Matrix {
     // This trait requires `fmt` with this exact signature.
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        write!(f, "( {}, {}, {}, {} )", self.0, self.1, self.2, self.3)
+        write!(f, "( {}, {} )\n( {}, {} )", self.0, self.1, self.2, self.3)
     }
 }
 
@@ -56,4 +61,8 @@ pub fn main() {
     let matrix = Matrix(1.1, 1.2, 2.1, 2.2);
     println!("{:?}", matrix);
     println!("{}", matrix);
+
+    println!(" Activity: Transpose matrix");
+    // Activity: Transpose matrix
+    println!("{}", transpose(matrix));
 }
