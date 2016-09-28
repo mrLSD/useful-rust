@@ -13,6 +13,7 @@ mod hello_format;
 mod primitives;
 mod primitives_literals;
 mod primitives_tuples;
+mod primitives_arrays;
 
 pub mod rbe {
     pub fn main() {
@@ -26,5 +27,6 @@ pub mod rbe {
         super::primitives::main();
         super::primitives_literals::main();
         super::primitives_tuples::main();
+        super::primitives_arrays::main();
     }
 }
