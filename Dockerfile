@@ -2,7 +2,7 @@ FROM ubuntu:latest
 MAINTAINER Evgeny Ukhanov <mrlsd@ya.ru>
 RUN apt-get update && apt-get install -y \
     git \
-    su \
+    sudo \
     lsb \
     gcc \
     curl \
@@ -11,5 +11,5 @@ RUN apt-get update && apt-get install -y \
     && mkdir /rs
 RUN curl -s https://static.rust-lang.org/rustup.sh | sh
 WORKDIR /rs
-ENTRYPOINT ["bash"]
-CMD ["-l"]
+ENTRYPOINT ["rustc"]
+CMD ["--version"]

@@ -45,4 +45,6 @@ fn main() {
 
     // Rust by examples
     tutor::rbe::main();
+
+    tutor::math::main();
 }

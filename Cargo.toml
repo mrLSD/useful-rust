@@ -4,3 +4,5 @@ version = "0.1.3"
 authors = ["Evgeny Ukhanov <mrlsd@ya.ru>"]
 
 [dependencies]
+num-bigint = "*"
+num-traits = "*"
