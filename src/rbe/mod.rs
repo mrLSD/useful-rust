@@ -15,6 +15,8 @@ mod primitives_literals;
 mod primitives_tuples;
 mod primitives_arrays;
 
+mod custom_types_structures;
+
 pub mod rbe {
     pub fn main() {
         super::hello::main();
@@ -28,5 +30,7 @@ pub mod rbe {
         super::primitives_literals::main();
         super::primitives_tuples::main();
         super::primitives_arrays::main();
+
+        super::custom_types_structures::main();
     }
 }
