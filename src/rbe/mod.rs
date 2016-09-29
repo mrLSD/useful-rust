@@ -16,6 +16,7 @@ mod primitives_tuples;
 mod primitives_arrays;
 
 mod custom_types_structures;
+mod scoping_rules_raii;
 
 pub mod rbe {
     pub fn main() {
@@ -32,5 +33,6 @@ pub mod rbe {
         super::primitives_arrays::main();
 
         super::custom_types_structures::main();
+        super::scoping_rules_raii::main();
     }
 }
