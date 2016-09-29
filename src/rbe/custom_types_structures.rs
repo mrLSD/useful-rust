@@ -20,7 +20,7 @@ struct Rectangle {
     p2: Point,
 }
 
-fn main() {
+pub fn main() {
     // Instantiate a `Point`
     let point: Point = Point { x: 0.3, y: 0.4 };
 
@@ -36,7 +36,7 @@ fn main() {
         p1: Point { x: my_y, y: my_x },
         p2: point,
     };
-    println!("Rectangle: {:?}", _rectangle);
+    //println!("Rectangle: {:?}", _rectangle);
 
     // Instantiate a unit struct
     let _nil = Nil;
@@ -53,4 +53,17 @@ fn main() {
     let Pair(integer, decimal) = pair;
 
     println!("pair contains {:?} and {:?}", integer, decimal);
+
+    // Calculates the area of a rectangle
+    let rect: Rectangle = Rectangle{
+        p1: Point{x:-2.0, y: 3.2},
+        p2: Point{x: 3.2, y:-1.8},
+    };
+    println!("Rectangle Area: {:?}", rect_area(rect));
+}
+
+// Activity
+// Calculates the area of a rectangle
+fn rect_area(rect: Rectangle) -> f32 {
+    1.0
 }
