@@ -17,6 +17,7 @@ mod primitives_arrays;
 
 mod custom_types_structures;
 mod scoping_rules_raii;
+mod scoping_rules_ownership;
 
 pub mod rbe {
     pub fn main() {
@@ -34,5 +35,6 @@ pub mod rbe {
 
         super::custom_types_structures::main();
         super::scoping_rules_raii::main();
+        super::scoping_rules_ownership::main();
     }
 }

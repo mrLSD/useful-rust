@@ -43,8 +43,8 @@ fn main() {
     tutor::closures::main();
     tutor::structs::structs::main();
 
+    tutor::math::main();
+
     // Rust by examples
     tutor::rbe::main();
-
-    tutor::math::main();
 }
