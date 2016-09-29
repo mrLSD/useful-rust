@@ -67,3 +67,13 @@ pub fn main() {
 fn rect_area(rect: Rectangle) -> f32 {
     1.0
 }
+
+// Activity
+// returns a Rectangle with its lower left corner on the point
+fn square(p: Point, w: f32) -> Rectangle {
+    let point = &p;
+    return Rectangle{
+        p1: *point,
+        p2: Point{x: p.x + w, y: p.y + w},
+    };
+}
