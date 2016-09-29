@@ -16,15 +16,17 @@ pub fn main() {
     // *Copy* `x` into `y` - no resources are moved
     let y = x;
     let mut z = x;
-    z = 3;
 
     // Both values can be independently used
     println!("x is {}, and y is {}, z is {}", x, y, z);
+
+    z = 3;
     notdestroy_uint(z);
     println!("{}", z);
 
     // `a` is a pointer to a _heap_ allocated integer
-    let a = Box::new(5i32);
+    let mut a = Box::new(5i32);
+    *a = 10;
 
     println!("a contains: {}", a);
 
@@ -47,4 +49,22 @@ pub fn main() {
     // Error! Same reason as the previous Error
     //println!("b contains: {}", b);
     // TODO ^ Try uncommenting this line
+
+    //=================================
+    let immutable_box = Box::new(5u32);
+
+    println!("immutable_box contains {}", immutable_box);
+
+    // Mutability error
+    //*immutable_box = 4;
+
+    // *Move* the box, changing the ownership (and mutability)
+    let mut mutable_box = immutable_box;
+
+    println!("mutable_box contains {}", mutable_box);
+
+    // Modify the contents of the box
+    *mutable_box = 4;
+
+    println!("mutable_box now contains {}", mutable_box);
 }
