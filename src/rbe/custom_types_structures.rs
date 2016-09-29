@@ -14,7 +14,7 @@ struct Point {
 }
 
 // Structs can be reused as fields of another struct
-#[allow(dead_code)]
+#[derive(Debug)]
 struct Rectangle {
     p1: Point,
     p2: Point,
@@ -59,21 +59,31 @@ pub fn main() {
         p1: Point{x:-2.0, y: 3.2},
         p2: Point{x: 3.2, y:-1.8},
     };
-    println!("Rectangle Area: {:?}", rect_area(rect));
+    println!("Rectangle Area: {:?}", rect_area(&rect));
+    //println!("Rectangle Square: {:?}", square(&point, 3.4));
 }
 
 // Activity
 // Calculates the area of a rectangle
-fn rect_area(rect: Rectangle) -> f32 {
-    1.0
+fn rect_area(rect: &Rectangle) -> f32 {
+    let mut width_x = rect.p1.x - rect.p2.x;
+    if rect.p1.x < rect.p2.x {
+        width_x = -width_x;
+    }
+
+    let mut width_y = rect.p1.y - rect.p2.y;
+    if rect.p1.y < rect.p2.y {
+        width_y = -width_y;
+    }
+
+    width_x * width_y
 }
 
 // Activity
 // returns a Rectangle with its lower left corner on the point
-fn square(p: Point, w: f32) -> Rectangle {
-    let point = &p;
+fn square(p: &Point, w: f32) -> Rectangle {
     return Rectangle{
-        p1: *point,
-        p2: Point{x: p.x + w, y: p.y + w},
+        p1: Point{x: 2.0 + w, y: 1.0 + w},
+        p2: Point{x: 2.0 + w, y: 1.0 + w},
     };
 }
