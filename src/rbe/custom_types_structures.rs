@@ -7,7 +7,7 @@ struct Nil;
 struct Pair(i32, f32);
 
 // A struct with two fields
-#[derive(Debug)]
+#[derive(Debug, Clone, Copy)]
 struct Point {
     x: f32,
     y: f32,
@@ -36,7 +36,7 @@ pub fn main() {
         p1: Point { x: my_y, y: my_x },
         p2: point,
     };
-    //println!("Rectangle: {:?}", _rectangle);
+    println!("Rectangle: {:?}", _rectangle);
 
     // Instantiate a unit struct
     let _nil = Nil;
@@ -60,7 +60,7 @@ pub fn main() {
         p2: Point{x: 3.2, y:-1.8},
     };
     println!("Rectangle Area: {:?}", rect_area(&rect));
-    //println!("Rectangle Square: {:?}", square(&point, 3.4));
+    println!("Rectangle Square: {:?}", square(&point, 3.4));
 }
 
 // Activity
@@ -83,7 +83,7 @@ fn rect_area(rect: &Rectangle) -> f32 {
 // returns a Rectangle with its lower left corner on the point
 fn square(p: &Point, w: f32) -> Rectangle {
     return Rectangle{
-        p1: Point{x: 2.0 + w, y: 1.0 + w},
-        p2: Point{x: 2.0 + w, y: 1.0 + w},
+        p1: *p,
+        p2: Point{x: p.x + w, y: p.y + w},
     };
 }
