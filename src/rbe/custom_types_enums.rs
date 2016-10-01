@@ -1,6 +1,7 @@
 // An attribute to hide warnings for unused code.
 #![allow(dead_code)]
-#[derive(debug)]
+// PartialEq - for comparision (==)
+#[derive(Debug, PartialEq)]
 // Create an `enum` to classify someone. Note how both names
 // and type information together specify the variant:
 // `Engineer != Scientist` and `Height(i32) != Weight(i32)`. Each
