@@ -1,5 +1,4 @@
-/*
-use List::*;
+use self::List::*;
 
 enum List {
     // Cons: Tuple struct that wraps an element and a pointer to the next node
@@ -51,9 +50,8 @@ impl List {
         }
     }
 }
-*/
+
 pub fn main() {
-/*
     // Create an empty linked list
     let mut list = List::new();
 
@@ -65,5 +63,4 @@ pub fn main() {
     // Show the final state of the list
     println!("linked list has length: {}", list.len());
     println!("{}", list.stringify());
-*/
 }
