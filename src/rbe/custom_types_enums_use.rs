@@ -14,9 +14,9 @@ enum Work {
 pub fn main() {
     // Explicitly `use` each name so they are available without
     // manual scoping.
-    use Status::{Poor, Rich};
+    use self::Status::{Poor, Rich};
     // Automatically `use` each name inside `Work`.
-    use Work::*;
+    use self::Work::*;
 
     // Equivalent to `Status::Poor`.
     let status = Poor;
