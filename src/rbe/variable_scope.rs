@@ -12,7 +12,7 @@ pub fn main() {
         // This binding *shadows* the outer one
         let long_lived_binding = 5_f32;
 
-        println!("inner long: {}", long_lived_binding);
+        println!("inner (*shadows*) long: {}", long_lived_binding);
     }
     // End of the block
 
@@ -25,5 +25,5 @@ pub fn main() {
     // This binding also *shadows* the previous binding
     let long_lived_binding = 'a';
 
-    println!("outer long: {}", long_lived_binding);
+    println!("outer (*shadows*) long: {}", long_lived_binding);
 }
