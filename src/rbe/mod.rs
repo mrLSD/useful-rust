@@ -24,6 +24,7 @@ mod custom_types_constants;
 
 mod variable;
 mod variable_mutability;
+mod variable_scope;
 
 mod scoping_rules_raii;
 mod scoping_rules_ownership;
@@ -51,6 +52,7 @@ pub mod rbe {
 
         super::variable::main();
         super::variable_mutability::main();
+        super::variable_scope::main();
 
         super::scoping_rules_raii::main();
         super::scoping_rules_ownership::main();
