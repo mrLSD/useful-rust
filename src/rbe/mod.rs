@@ -32,6 +32,8 @@ mod casting_literals;
 mod casting_inference;
 mod casting_alias;
 
+mod expressions;
+
 mod scoping_rules_raii;
 mod scoping_rules_ownership;
 
@@ -65,6 +67,8 @@ pub mod rbe {
         super::casting_literals::main();
         super::casting_inference::main();
         super::casting_alias::main();
+
+        super::expressions::main();
 
         super::scoping_rules_raii::main();
         super::scoping_rules_ownership::main();
