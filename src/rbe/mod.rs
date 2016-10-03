@@ -28,6 +28,7 @@ mod variable_scope;
 mod variable_declare;
 
 mod casting;
+mod casting_literals;
 
 mod scoping_rules_raii;
 mod scoping_rules_ownership;
@@ -59,6 +60,7 @@ pub mod rbe {
         super::variable_declare::main();
 
         super::casting::main();
+        super::casting_literals::main();
 
         super::scoping_rules_raii::main();
         super::scoping_rules_ownership::main();
