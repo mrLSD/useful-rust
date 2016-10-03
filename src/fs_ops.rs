@@ -38,10 +38,7 @@ fn file_ops() {
     let mut reader = BufReader::with_capacity(1024, f);
     loop {
         let length = {
-            let buffer = match reader.fill_buf() {
-                Err(err) => panic!("Failed reading. Err: {}", err),
-                Ok(res) => res,
-            };
+            let buffer = reader.fill_buf().expect("Failed reading");
             buffer.len()
         };
         if length == 0 { break }
