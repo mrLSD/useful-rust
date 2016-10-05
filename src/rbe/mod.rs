@@ -36,6 +36,7 @@ mod expressions;
 
 mod flowcontrol_ifelse;
 mod flowcontrol_loop;
+mod flowcontrol_while;
 
 mod scoping_rules_raii;
 mod scoping_rules_ownership;
@@ -75,6 +76,7 @@ pub mod rbe {
 
         super::flowcontrol_ifelse::main();
         super::flowcontrol_loop::main();
+        super::flowcontrol_while::main();
 
         super::scoping_rules_raii::main();
         super::scoping_rules_ownership::main();
