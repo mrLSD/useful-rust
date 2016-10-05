@@ -35,6 +35,7 @@ mod casting_alias;
 mod expressions;
 
 mod flowcontrol_ifelse;
+mod flowcontrol_loop;
 
 mod scoping_rules_raii;
 mod scoping_rules_ownership;
@@ -73,6 +74,7 @@ pub mod rbe {
         super::expressions::main();
 
         super::flowcontrol_ifelse::main();
+        super::flowcontrol_loop::main();
 
         super::scoping_rules_raii::main();
         super::scoping_rules_ownership::main();
