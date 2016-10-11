@@ -48,6 +48,6 @@ fn file_ops() {
         reader.consume(length);
     }
     // Remove dir and their data
-//    let _  = fs::remove_dir_all(&path);
-//    println!("Directory revomed: {:?}", path.display());
+    let _  = fs::remove_dir_all(&path);
+    println!("Directory revomed: {:?}", path.display());
 }
