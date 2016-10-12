@@ -30,6 +30,7 @@ pub fn main() {
     destructured_enums();
     destructured_pointers_ref();
     destructured_structs();
+    guards();
 }
 
 fn destructured_tuples() {
@@ -161,4 +162,18 @@ fn destructured_structs() {
 
     // this will give an error: pattern does not mention field `x`
     // let Foo { y } = foo;
+}
+
+fn guards() {
+    let pair = (2, -2);
+    // TODO ^ Try different values for `pair`
+
+    println!("Tell me about {:?}", pair);
+    match pair {
+        (x, y) if x == y => println!("guards |> These are twins"),
+        // The ^ `if condition` part is a guard
+        (x, y) if x + y == 0 => println!("guards |> Antimatter, kaboom!"),
+        (x, _) if x % 2 == 1 => println!("guards |> The first one is odd"),
+        _  => println!("guards |> No correlation..."),
+    }
 }
