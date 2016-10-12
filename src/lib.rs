@@ -9,3 +9,4 @@ pub mod closures;
 pub mod structs;
 pub mod rbe;
 pub mod math;
+pub mod fs_ops;

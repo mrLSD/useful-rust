@@ -47,4 +47,5 @@ fn main() {
 
     // Rust by examples
     tutor::rbe::main();
+    tutor::fs_ops::main();
 }
