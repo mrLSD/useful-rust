@@ -41,6 +41,7 @@ mod flowcontrol_for;
 mod flowcontrol_match;
 mod flowcontrol_if_let;
 mod flowcontrol_while_let;
+mod functions;
 
 mod scoping_rules_raii;
 mod scoping_rules_ownership;
@@ -85,6 +86,8 @@ pub mod rbe {
         super::flowcontrol_match::main();
         super::flowcontrol_if_let::main();
         super::flowcontrol_while_let::main();
+
+        super::functions::main();
 
         super::scoping_rules_raii::main();
         super::scoping_rules_ownership::main();
