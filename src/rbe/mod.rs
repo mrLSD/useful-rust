@@ -48,6 +48,7 @@ mod functions_closures;
 mod functions_closures_capturing;
 mod functions_closures_input_parameters;
 mod functions_closures_type_anonymity;
+mod functions_closures_input_functions;
 
 mod scoping_rules_raii;
 mod scoping_rules_ownership;
@@ -100,6 +101,7 @@ pub mod rbe {
         super::functions_closures_input_parameters::main();
         super::functions_closures_input_parameters::main();
         super::functions_closures_type_anonymity::main();
+        super::functions_closures_input_functions::main();
 
         super::scoping_rules_raii::main();
         super::scoping_rules_ownership::main();
