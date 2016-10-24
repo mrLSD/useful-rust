@@ -59,6 +59,8 @@ mod modules_use;
 mod modules_super_self;
 mod modules_file_hierarchy;
 
+mod attributes_dead_code;
+
 mod scoping_rules_raii;
 mod scoping_rules_ownership;
 
@@ -119,6 +121,8 @@ pub mod rbe {
         super::modules_use::main();
         super::modules_super_self::main();
         super::modules_file_hierarchy::split::main();
+
+        super::attributes_dead_code::main();
 
         super::scoping_rules_raii::main();
         super::scoping_rules_ownership::main();
