@@ -57,6 +57,7 @@ mod modules_visibility;
 mod modules_struct_visibility;
 mod modules_use;
 mod modules_super_self;
+mod modules_file_hierarchy;
 
 mod scoping_rules_raii;
 mod scoping_rules_ownership;
@@ -117,6 +118,7 @@ pub mod rbe {
         super::modules_struct_visibility::main();
         super::modules_use::main();
         super::modules_super_self::main();
+        super::modules_file_hierarchy::split::main();
 
         super::scoping_rules_raii::main();
         super::scoping_rules_ownership::main();
