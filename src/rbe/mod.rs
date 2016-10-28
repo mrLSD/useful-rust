@@ -63,6 +63,7 @@ mod attributes_dead_code;
 mod attributes_cfg;
 
 mod generics;
+mod generics_functions;
 
 mod scoping_rules_raii;
 mod scoping_rules_ownership;
@@ -129,6 +130,7 @@ pub mod rbe {
         super::attributes_cfg::main();
 
         super::generics::main();
+        super::generics_functions::main();
 
         super::scoping_rules_raii::main();
         super::scoping_rules_ownership::main();
