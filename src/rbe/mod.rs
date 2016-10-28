@@ -65,6 +65,7 @@ mod attributes_cfg;
 mod generics;
 mod generics_functions;
 mod generics_implementation;
+mod generics_traits;
 
 mod scoping_rules_raii;
 mod scoping_rules_ownership;
@@ -133,6 +134,7 @@ pub mod rbe {
         super::generics::main();
         super::generics_functions::main();
         super::generics_implementation::main();
+        super::generics_traits::main();
 
         super::scoping_rules_raii::main();
         super::scoping_rules_ownership::main();
