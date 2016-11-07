@@ -72,6 +72,7 @@ mod generics_where_clauses;
 mod generics_associated_items;
 mod generics_associated_types;
 mod generics_phantom_type_parameters;
+mod generics_unit_clarification;
 
 mod scoping_rules_raii;
 mod scoping_rules_ownership;
@@ -147,6 +148,8 @@ pub mod rbe {
         super::generics_associated_items::main();
         super::generics_associated_types::main();
         super::generics_phantom_type_parameters::main();
+        super::generics_phantom_type_parameters::main();
+        super::generics_unit_clarification::main();
 
         super::scoping_rules_raii::main();
         super::scoping_rules_ownership::main();
