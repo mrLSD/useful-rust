@@ -68,6 +68,7 @@ mod generics_implementation;
 mod generics_traits;
 mod generics_bounds;
 mod generics_multiple_bounds;
+mod generics_where_clauses;
 
 mod scoping_rules_raii;
 mod scoping_rules_ownership;
@@ -139,6 +140,7 @@ pub mod rbe {
         super::generics_traits::main();
         super::generics_bounds::main();
         super::generics_multiple_bounds::main();
+        super::generics_where_clauses::main();
 
         super::scoping_rules_raii::main();
         super::scoping_rules_ownership::main();
