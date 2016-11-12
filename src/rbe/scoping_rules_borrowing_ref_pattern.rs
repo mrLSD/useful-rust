@@ -41,7 +41,8 @@ pub fn main() {
 
     {
         // Destructure `mutable_ tuple` to change the value of `last`.
-        let (_, ref mut last) = mutable_tuple;
+        let (ref mut first, ref mut last) = mutable_tuple;
+        *first = Box::new(10u32);
         *last = 2u32;
     }
 

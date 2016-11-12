@@ -80,6 +80,7 @@ mod scoping_rules_borrowing;
 mod scoping_rules_borrowing_mutability;
 mod scoping_rules_borrowing_aliasing;
 mod scoping_rules_borrowing_ref_pattern;
+mod scoping_rules_lifetimes;
 
 pub mod rbe {
     pub fn main() {
@@ -161,5 +162,6 @@ pub mod rbe {
         super::scoping_rules_borrowing_mutability::main();
         super::scoping_rules_borrowing_aliasing::main();
         super::scoping_rules_borrowing_ref_pattern::main();
+        super::scoping_rules_lifetimes::main();
     }
 }
