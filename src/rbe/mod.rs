@@ -78,6 +78,7 @@ mod scoping_rules_raii;
 mod scoping_rules_ownership;
 mod scoping_rules_borrowing;
 mod scoping_rules_borrowing_mutability;
+mod scoping_rules_borrowing_aliasing;
 
 pub mod rbe {
     pub fn main() {
@@ -157,5 +158,6 @@ pub mod rbe {
         super::scoping_rules_ownership::main();
         super::scoping_rules_borrowing::main();
         super::scoping_rules_borrowing_mutability::main();
+        super::scoping_rules_borrowing_aliasing::main();
     }
 }
