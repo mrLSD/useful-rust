@@ -18,6 +18,24 @@ fn new_edition(book: &mut Book) {
     println!("I mutably borrowed {} - {} edition", book.title, book.year);
 }
 
+fn freezing() {
+    let mut _mutable_integer = 7i32;
+
+    {
+        // Borrow `_mutable_integer`
+        let _large_integer = &_mutable_integer;
+
+        // Error! `_mutable_integer` is frozen in this scope
+        //_mutable_integer = 50;
+        // FIXME ^ Comment out this line
+
+        // `_large_integer` goes out of scope
+    }
+
+    // Ok! `_mutable_integer` is not frozen in this scope
+    _mutable_integer = 3;
+}
+
 pub fn main() {
     // Create an immutable Book named `immutabook`
     let immutabook = Book {
@@ -42,4 +60,6 @@ pub fn main() {
     // Error! Cannot borrow an immutable object as mutable
     //new_edition(&mut immutabook);
     // FIXME ^ Comment out this line
+
+    freezing();
 }
