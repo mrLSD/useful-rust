@@ -76,6 +76,7 @@ mod generics_unit_clarification;
 
 mod scoping_rules_raii;
 mod scoping_rules_ownership;
+mod scoping_rules_borrowing;
 
 pub mod rbe {
     pub fn main() {
@@ -153,5 +154,6 @@ pub mod rbe {
 
         super::scoping_rules_raii::main();
         super::scoping_rules_ownership::main();
+        super::scoping_rules_borrowing::main();
     }
 }
