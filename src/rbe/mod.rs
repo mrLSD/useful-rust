@@ -83,6 +83,7 @@ mod scoping_rules_borrowing_ref_pattern;
 mod scoping_rules_lifetimes;
 mod scoping_rules_lifetimes_explicit;
 mod scoping_rules_lifetimes_functions;
+mod scoping_rules_lifetimes_structs;
 
 pub mod rbe {
     pub fn main() {
@@ -167,5 +168,6 @@ pub mod rbe {
         super::scoping_rules_lifetimes::main();
         super::scoping_rules_lifetimes_explicit::main();
         super::scoping_rules_lifetimes_functions::main();
+        super::scoping_rules_lifetimes_structs::main();
     }
 }
