@@ -1,6 +1,6 @@
 [package]
 name = "rust-tutorials"
-version = "0.4.12"
+version = "0.5.0"
 authors = ["Evgeny Ukhanov <mrlsd@ya.ru>"]
 
 [dependencies]

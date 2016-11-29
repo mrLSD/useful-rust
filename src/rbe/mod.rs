@@ -89,6 +89,8 @@ mod scoping_rules_lifetimes_coercion;
 mod scoping_rules_lifetimes_static;
 mod scoping_rules_lifetimes_elision;
 
+mod traits;
+
 pub mod rbe {
     pub fn main() {
         super::hello::main();
@@ -178,5 +180,6 @@ pub mod rbe {
         super::scoping_rules_lifetimes_static::main();
         super::scoping_rules_lifetimes_elision::main();
 
+        super::traits::main();
     }
 }
