@@ -86,6 +86,7 @@ mod scoping_rules_lifetimes_functions;
 mod scoping_rules_lifetimes_structs;
 mod scoping_rules_lifetimes_bounds;
 mod scoping_rules_lifetimes_coercion;
+mod scoping_rules_lifetimes_static;
 
 pub mod rbe {
     pub fn main() {
@@ -173,6 +174,6 @@ pub mod rbe {
         super::scoping_rules_lifetimes_structs::main();
         super::scoping_rules_lifetimes_bounds::main();
         super::scoping_rules_lifetimes_coercion::main();
-
+        super::scoping_rules_lifetimes_static::main();
     }
 }
