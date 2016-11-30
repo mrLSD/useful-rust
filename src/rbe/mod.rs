@@ -90,6 +90,7 @@ mod scoping_rules_lifetimes_static;
 mod scoping_rules_lifetimes_elision;
 
 mod traits;
+mod traits_derive;
 
 pub mod rbe {
     pub fn main() {
@@ -181,5 +182,6 @@ pub mod rbe {
         super::scoping_rules_lifetimes_elision::main();
 
         super::traits::main();
+        super::traits_derive::main();
     }
 }
