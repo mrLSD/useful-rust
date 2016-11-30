@@ -91,6 +91,7 @@ mod scoping_rules_lifetimes_elision;
 
 mod traits;
 mod traits_derive;
+mod traits_operator_overloading;
 
 pub mod rbe {
     pub fn main() {
@@ -183,5 +184,6 @@ pub mod rbe {
 
         super::traits::main();
         super::traits_derive::main();
+        super::traits_operator_overloading::main();
     }
 }

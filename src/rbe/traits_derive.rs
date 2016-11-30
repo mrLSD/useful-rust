@@ -33,6 +33,8 @@ pub fn main() {
     println!("One foot equals {:?}", foot);
 
     let meter = Centimeters(100.0);
+    // Centimeters is comparable
+    assert!(meter == meter);
 
     let cmp =
         if foot.to_centimeters() < meter {
