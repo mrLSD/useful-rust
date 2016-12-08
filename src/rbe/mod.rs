@@ -93,6 +93,8 @@ mod traits;
 mod traits_derive;
 mod traits_operator_overloading;
 
+mod macro_rules;
+
 pub mod rbe {
     pub fn main() {
         super::hello::main();
@@ -185,5 +187,7 @@ pub mod rbe {
         super::traits::main();
         super::traits_derive::main();
         super::traits_operator_overloading::main();
+
+        super::macro_rules::main();
     }
 }
