@@ -94,6 +94,7 @@ mod traits_derive;
 mod traits_operator_overloading;
 
 mod macro_rules;
+mod macro_rules_designators;
 
 pub mod rbe {
     pub fn main() {
@@ -189,5 +190,6 @@ pub mod rbe {
         super::traits_operator_overloading::main();
 
         super::macro_rules::main();
+        super::macro_rules_designators::main();
     }
 }
