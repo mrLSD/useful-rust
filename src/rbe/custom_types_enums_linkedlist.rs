@@ -27,7 +27,7 @@ impl List {
         // depends on the variant of `self`
         // `self` has type `&List`, and `*self` has type `List`, matching on a
         // concrete type `T` is preferred over a match on a reference `&T`
-        match *self {
+         match *self {
             // Can't take ownership of the tail, because `self` is borrowed;
             // instead take a reference to the tail
             Cons(_, ref tail) => 1 + tail.len(),

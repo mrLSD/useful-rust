@@ -44,8 +44,10 @@ fn main() {
     tutor::structs::structs::main();
 
     tutor::math::main();
+    tutor::fs_ops::main();
 
     // Rust by examples
     tutor::rbe::main();
-    tutor::fs_ops::main();
+
+    tutor::linked_list::main();
 }
