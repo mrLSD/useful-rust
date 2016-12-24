@@ -99,6 +99,8 @@ mod macro_rules_overload;
 mod macro_rules_repeat;
 mod macro_rules_dry;
 
+mod error_handling_panic;
+
 pub mod rbe {
     pub fn main() {
         super::hello::main();
@@ -198,5 +200,6 @@ pub mod rbe {
         super::macro_rules_repeat::main();
         super::macro_rules_dry::main();
 
+        super::error_handling_panic::main();
     }
 }
