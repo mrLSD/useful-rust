@@ -100,6 +100,7 @@ mod macro_rules_repeat;
 mod macro_rules_dry;
 
 mod error_handling_panic;
+mod error_handling_option_unwrap;
 
 pub mod rbe {
     pub fn main() {
@@ -201,5 +202,6 @@ pub mod rbe {
         super::macro_rules_dry::main();
 
         super::error_handling_panic::main();
+        super::error_handling_option_unwrap::main();
     }
 }
