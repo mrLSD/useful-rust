@@ -125,6 +125,7 @@ mod std_library_types_hashmap_alternate;
 mod std_library_types_hashmap_hashset;
 
 mod std_misc_threads;
+mod std_misc_channels;
 
 pub mod rbe {
     pub fn main() {
@@ -251,5 +252,6 @@ pub mod rbe {
         super::std_library_types_hashmap_hashset::main();
 
         super::std_misc_threads::main();
+        super::std_misc_channels::main();
     }
 }
