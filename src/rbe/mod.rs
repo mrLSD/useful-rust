@@ -117,6 +117,7 @@ mod std_library_types_box;
 mod std_library_types_vectors;
 mod std_library_types_strings;
 mod std_library_types_option;
+mod std_library_types_result;
 
 pub mod rbe {
     pub fn main() {
@@ -235,5 +236,6 @@ pub mod rbe {
         super::std_library_types_vectors::main();
         super::std_library_types_strings::main();
         super::std_library_types_option::main();
+        super::std_library_types_result::main();
     }
 }
