@@ -116,6 +116,7 @@ mod error_handling_box_errors;
 mod std_library_types_box;
 mod std_library_types_vectors;
 mod std_library_types_strings;
+mod std_library_types_option;
 
 pub mod rbe {
     pub fn main() {
@@ -233,5 +234,6 @@ pub mod rbe {
         super::std_library_types_box::main();
         super::std_library_types_vectors::main();
         super::std_library_types_strings::main();
+        super::std_library_types_option::main();
     }
 }
