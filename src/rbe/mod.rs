@@ -109,6 +109,7 @@ mod error_handling_result_alias;
 mod error_handling_multiple_error;
 mod error_handling_multiple_error_early;
 mod error_handling_multiple_error_try;
+mod error_handling_defining_error;
 
 pub mod rbe {
     pub fn main() {
@@ -219,5 +220,6 @@ pub mod rbe {
         super::error_handling_multiple_error::main();
         super::error_handling_multiple_error_early::main();
         super::error_handling_multiple_error_try::main();
+        super::error_handling_defining_error::main();
     }
 }
