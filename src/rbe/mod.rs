@@ -114,6 +114,7 @@ mod error_handling_other_try;
 mod error_handling_box_errors;
 
 mod std_library_types_box;
+mod std_library_types_vectors;
 
 pub mod rbe {
     pub fn main() {
@@ -229,5 +230,6 @@ pub mod rbe {
         super::error_handling_box_errors::main();
 
         super::std_library_types_box::main();
+        super::std_library_types_vectors::main();
     }
 }
