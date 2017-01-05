@@ -30,4 +30,26 @@ pub fn main() {
     // The following now provides a much more helpful error message.
     let tt = double_number_map("t");
     print(tt);
+
+    fn x() -> Result<i32, i32> {
+        println!("-> [1] call");
+        Err(2)
+    }
+    fn y() -> Result<i32, i32> {
+        println!("-> [2] call");
+        Err(3)
+    }
+    // It invoke all functions
+    let _ = x().and(y());
+    fn go(i: i32) -> Result<i32, ()> {
+        Ok(i)
+    }
+    fn go2(i: i32) -> i32 {
+        i * 2
+    }
+    let res = go(4).map(go).map(|i| i.unwrap() + 3);
+    println!("Map result: {:?}", res);
+
+    let res = go(4).map(go2).map(|i| i + 3);
+    println!("Map result: {:?}", res);
 }
