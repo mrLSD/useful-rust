@@ -105,6 +105,7 @@ mod error_handling_option_combinators_map;
 mod error_handling_option_combinators_and_then;
 mod error_handling_result;
 mod error_handling_result_map;
+mod error_handling_result_alias;
 
 pub mod rbe {
     pub fn main() {
@@ -211,5 +212,6 @@ pub mod rbe {
         super::error_handling_option_combinators_and_then::main();
         super::error_handling_result::main();
         super::error_handling_result_map::main();
+        super::error_handling_result_alias::main();
     }
 }
