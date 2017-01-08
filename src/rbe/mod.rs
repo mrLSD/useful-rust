@@ -103,6 +103,7 @@ mod error_handling_panic;
 mod error_handling_option_unwrap;
 mod error_handling_option_combinators_map;
 mod error_handling_option_combinators_and_then;
+mod error_handling_result;
 
 pub mod rbe {
     pub fn main() {
@@ -207,5 +208,6 @@ pub mod rbe {
         super::error_handling_option_unwrap::main();
         super::error_handling_option_combinators_map::main();
         super::error_handling_option_combinators_and_then::main();
+        super::error_handling_result::main();
     }
 }
