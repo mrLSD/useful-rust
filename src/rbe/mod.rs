@@ -113,6 +113,8 @@ mod error_handling_defining_error;
 mod error_handling_other_try;
 mod error_handling_box_errors;
 
+mod std_library_types_box;
+
 pub mod rbe {
     pub fn main() {
         super::hello::main();
@@ -225,5 +227,7 @@ pub mod rbe {
         super::error_handling_defining_error::main();
         super::error_handling_other_try::main();
         super::error_handling_box_errors::main();
+
+        super::std_library_types_box::main();
     }
 }
